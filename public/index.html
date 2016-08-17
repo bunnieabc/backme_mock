@@ -62,10 +62,10 @@
           <div class="item">
             <div class="item-pic test3">
               <div class="dark-cover">
-                <div class="icon bg-deep-blue" data-toggle="modal" data-target="#myModal">
+                <div class="icon bg-deep-blue detail-icon" data-toggle="modal" data-target="#myModal">
                   <img src="assets/img/main/icon1.svg" alt="">
                 </div>
-                <div class="icon bg-blue" data-toggle="modal" data-target="#myModal2">
+                <div class="icon bg-blue cart-icon" data-toggle="modal" data-target="#myModal">
                   <img src="assets/img/main/icon2.svg" alt="">
                 </div>
               </div>
@@ -254,80 +254,8 @@
                 <span class="icon"><i class="fa fa-angle-right"></i></span> 
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="myModal2" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-block-out">
-          <div class="modal-block2">
-            <div class="modal-content-md">
-              <div class="content-outside">
-                <div class="title">
-                  <h3>我是商品名稱</h3><span class="limit">限量</span>
-                </div>
-                <div class="content-inside">
-                  <div class="price">
-                    <span class="unit">NT$</span>
-                    <span class="money">490</span>
-                  </div>
-                  <div class="sub-title">
-                    榮獲 2015 芝加哥國際家用品展最佳產品獎   
-                  </div>
-                  <div class="sub-content">
-                    把手內部蓄熱液體將熱量能傳導至勺頭。<br> 
-                     無須使用電力即可輕鬆挖取冰淇淋。<br> 
-                     立即享用透心涼的好滋味!<br>
-                  </div>
-                  <div class="sub-title">
-                    榮獲 2015 芝加哥國際家用品展最佳產品獎   
-                  </div>
-                  <div class="sub-content">
-                    把手內部蓄熱液體將熱量能傳導至勺頭。<br> 
-                     無須使用電力即可輕鬆挖取冰淇淋。<br> 
-                     立即享用透心涼的好滋味!<br>
-                  </div>
-                  <div class="sub-title">
-                    榮獲 2015 芝加哥國際家用品展最佳產品獎   
-                  </div>
-                  <div class="sub-content">
-                    把手內部蓄熱液體將熱量能傳導至勺頭。<br> 
-                     無須使用電力即可輕鬆挖取冰淇淋。<br> 
-                     立即享用透心涼的好滋味!<br>
-                  </div>
-
-                </div>
-              </div>
-               
-              <div class="btn-cart">
-                <span class="icon2"><i class="fa fa-angle-left"></i></span> 
-                <span class="back">回到圖片</span>
-                
-                <span class="space"></span> 
-              </div>
-            </div>
-            <!--
-            <div class="modal-cart">
-              <div class="content-outside">
-                <h4>回饋品詳細內容</h4>
-                <div class="count">
-                  <h5>數量</h5>
-                  <input id="demo" type="text" value="1" name="demo3_22">
-                </div>  
-              </div>
-              
-              <div class="bottom-bar">
-                <span class="price">
-                  總計 NT$ <span class="money" style="font-weight:600;font-size:24px;">1,000</span>
-                </span>
-                <span class="goto"><i class="fa fa-shopping-cart"></i>加入購物車</span>
-              </div>
-            </div>
-            -->
-            <div class="modal-content-md bg-gray">
+            
+            <div class="modal-content-md2 bg-gray" style="position:absolute;top:0px;left:100%;">
               <div class="content-outside">
                 <h4>回饋品詳細內容</h4>
                 <div class="count">
@@ -370,24 +298,88 @@
                 <span class="goto"><img src="assets/img/main/icon2.svg" alt="">加入購物車</span>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>
     </div>
 
   </section>
+  <div class="sidebar">
+    <div class="list">
+      <div class="title">
+        <h3>購物車清單</h3>
+          <select class="order">
+            <!-- This method is nice because it doesn't require extra div tags, but it also doesn't retain the style across all browsers. -->
+            <option>排序方式</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+          </select>
+      </div>
+      <hr>
+      <div class="list-item">
+        <div class="item-photo test">  
+        </div>
+        <div class="item-content">
+          <div class="item-title">我是他的名字，我可能大概會超長</div>
+          <div class="item-detail">
+            <input id="demo" type="text" value="1" name="demo3_22">
+            <div class="item-detail-btn"><i class="fa fa-caret-right"></i>詳細規格</div>
+            <div class="item-detail-hide">
+              <table>
+                <tr><td>我是問題1</td><td>我是問題1的回答</td></tr>
+                <tr><td>我是問題2</td><td>我是問題2的回答</td></tr>
+                <tr><td>我是加購</td><td>我是加購加購加購</td></tr>
+              </table>
+            </div>
+          </div>
+          <div class="item-money">NT$ 480</div>
+        </div>
+      </div>
+      <hr>
+      <div class="list-item">
+        <div class="item-photo test2">  
+        </div>
+        <div class="item-content">
+          <div class="item-title">我是他的名字，我可能大概會超長</div>
+          <div class="item-detail">
+            <input id="demo" type="text" value="1" name="demo3_22">
+            <div class="item-detail-btn"><i class="fa fa-caret-right"></i>詳細規格</div>
+            <div class="item-detail-hide">
+              <table>
+                <tr><td>我是問題1</td><td>我是問題1的回答</td></tr>
+                <tr><td>我是問題2</td><td>我是問題2的回答</td></tr>
+                <tr><td>我是加購</td><td>我是加購加購加購</td></tr>
+              </table>
+            </div>
+          </div>
+          <div class="item-money">NT$ 480</div>
+        </div>
+      </div>
+      <hr>
+
+    </div>
+  </div>
   <footer>
     <div class="container-fluid">
       <div class="out" >
         <ul class="nav navbar-nav navbar-right">
-          
           <li>
-            <a class="page-scroll" href="#support">紀錄查詢</a>
+            <span class="extra">額外贊助</span><input type="number" name="quantity" min="1" max="5" value="0">
           </li>
           <li>
-            <a class="page-scroll" href="#qa">資料修改</a>
+            <span class="total-word">總計</span><span class="money">123132</span>
+          </li>
+          <li class="cart">
+            <img src="assets/img/main/icon2-2.svg" alt="">
+            <div class="num">
+              5
+            </div>
+          </li>
+          <li class="bg-blue goto text-center">
+            <span class="checkout-word">結帳</span> 
+            <span class="icon"><i class="fa fa-angle-right"></i></span>
           </li>
         </ul>
       </div>
