@@ -1,0 +1,202 @@
+.h4, .h5 {
+	line-height: 1.5;
+	display: inline;
+}
+
+.h3 {
+	margin: 0;
+	display: inline-block;
+}
+
+.h4 {
+	font-weight: 600;
+}
+
+.h5 {
+	color: #7C909B;
+}
+
+.white-zone {
+	background-color: white;
+	width: 100%;
+	height: auto;
+	min-height: 100px;
+	padding: 30px 0;
+	
+	a {
+		cursor: pointer;
+		color: #506476;
+	}
+	
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+.edit {
+	line-height: 24px;
+	font-size: 15px;
+	color: #3692ce;
+    display: block;
+    float: right;
+}
+
+.record-up {
+	height: 130px;
+	margin-bottom: 15px;
+}
+
+.record {
+	width: 440px;
+	height: 288px;
+	border-radius: 4px;
+	background-color: #ffffff;
+	border: solid 1px #dedede;
+	padding: 15px;
+	margin: 0 30px 30px 0;
+	display: inline-block;
+
+	._record_img {
+		width: 172px;
+		height: 130px;
+		background-size: cover;
+		display: inline-block;
+		float: left;
+		margin-right: 15px;
+	}
+
+	span {
+		background-color: #d4eeff;
+	}
+}
+
+.you-back {
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	color: #7a7a7a;
+	background-color: #efefef;
+	border-radius: 3px;
+	padding: 8px;
+}
+
+.btn {
+	padding: 15px 30px;
+	width: 160px;
+	height: 50px;
+	background-color: #ffffff;
+	border: solid 1px #979797;
+	margin-top: 15px;
+	border-radius: 3px;
+	font-size: 16px;
+	line-height: 1;
+	transition: .1s;
+}
+
+.btn:hover {
+	color: #44ACF2;
+}
+
+.fb-btn {
+	width: 104px;
+	background-color: #4a73a8;
+	color: white;
+	border: none;
+	float: right;
+	font-weight: 600;
+	transition: .1s;
+}
+
+.fb-btn:hover {
+	color: #DEDEDE;
+}
+
+.r-table>tbody>tr:first-child {
+	th, td {
+		border-top: none;
+	}
+}
+
+.r-table>tbody>tr {
+	th, td {
+		line-height: 1.7;
+		/*width: 100px;*/
+	}
+}
+
+.r-table {
+	margin-top: 30px;
+}
+
+.basic-info {
+	margin-right: 15px;
+}
+
+.receive-info {
+	border: 1px solid #C6C8CF;
+	display: inline-block;
+	padding: 15px;
+	border-radius: 3px;
+	margin-bottom: 40px;
+
+	.h4 {
+		font-weight: 400;
+		font-size: 16px;
+	}
+
+	img {
+		margin-right: 10px;
+		padding-bottom: 7px;
+	}
+
+	.info-indent {
+		margin-left: 34px;
+	}
+	
+	hr {
+		margin: 10px -15px;
+	}
+}
+
+.purchase-info {
+	border: 1px solid #C6C8CF;
+	display: inline-block;
+	padding: 15px;
+	border-radius: 3px;
+	margin-bottom: 40px;
+
+	hr {
+		margin: 10px -15px 0 -15px;
+	}
+
+	.purchase {
+		width: 414px;
+		border-right: 1px solid #c6c8cf;
+		border-bottom: 1px solid #c6c8cf;
+		padding: 10px 0;
+		margin-left: -15px;
+		display: inline-block;
+
+		._purchase_img {
+			height: 60px;
+			width: 80px;
+		    background-size: cover;
+		    
+		}
+	}
+}
+
+hr {
+	border-color: #c6c8cf;
+}
+
+
+
+@media screen and (max-width: 992px) {
+	
+}
+
+
+
+
+
