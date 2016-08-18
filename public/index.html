@@ -20,9 +20,9 @@
   <link rel="stylesheet" href="/assets/css/index.css">
 </head>
 <body>
-  <nav id="mainNav" class="navbar navbar1 ">
+  <nav id="mainNav" class="navbar navbar1">
     <div class="container">
-    <div class="col-md-10 col-md-offset-1">
+    <div class="col-md-10 col-md-offset-1 col-sm-offset-0 col-sm-12 col-xs-12 col-xs-offset-0">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -53,12 +53,12 @@
   </nav>
   <section class="sec1">
     <div class="container">
-      <div class="content col-md-10 col-md-offset-1 ">
+      <div class="content col-md-10 col-md-offset-1 col-sm-offset-0 col-sm-12 col-xs-offset-0 col-xs-12">
         <div class="col-md-12">
           <h2>奇想生活商城</h2>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6 col-xs-6">
           <div class="item">
             <div class="item-pic test3">
               <div class="dark-cover">
@@ -78,7 +78,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6 col-xs-6">
           <div class="item">
             <div class="item-pic test">
               <div class="dark-cover">
@@ -97,7 +97,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6 col-xs-6">
           <div class="item">
             <div class="item-pic test2">
 
@@ -119,18 +119,18 @@
           </div>
         </div>
 
-         <div class="col-md-4">
+         <div class="col-md-4 col-sm-6 col-xs-6">
           <div class="item">
             <div class="item-pic test3">
             </div>
             <div class="item-content">
-              <h4>奇想的湯匙1號</h4>
+              <h4>奇想的湯匙1號奇想的湯匙</h4>
               <span class="price"> NT$ 2000
               </span>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6 col-xs-6">
           <div class="item">
             <div class="item-pic test">
             </div>
@@ -141,7 +141,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6 col-xs-6">
           <div class="item">
             <div class="item-pic test2">
             </div>
@@ -154,7 +154,7 @@
           </div>
         </div>
 
-         <div class="col-md-4">
+         <div class="col-md-4 col-sm-6 col-xs-6">
           <div class="item">
             <div class="item-pic test">
             </div>
@@ -165,7 +165,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6 col-xs-6">
           <div class="item">
             <div class="item-pic test3">
             </div>
@@ -176,7 +176,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6 col-xs-6">
           <div class="item">
             <div class="item-pic test2">
             </div>
@@ -196,11 +196,9 @@
       <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-block-out">
-
-
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
           <div class="modal-block">
-      
-            <div class="modal-img ">
+            <div class="modal-img">
               <div class="modal-img-md test-bg1"></div>
               <div class="modal-img-sm-row" id="item-id">
                 <div class="modal-img-sm test-bg1 focus" id="p2"></div>
@@ -257,12 +255,16 @@
               </div>
                
               <div class="btn-cart">
-                <span class="into">進入購物車</span>
-                <span class="icon"><i class="fa fa-angle-right"></i></span> 
+                <span class='back hidden-lg hidden-md' data-dismiss='modal'>回到商場</span>
+                <span class='transform-btn'>
+                  <span class='into'>進入購物車</span>
+                  <span class='icon'><i class='fa fa-angle-right'></i></span>
+                </span> 
               </div>
             </div>
             
             <div class="modal-content-md2 bg-gray" style="position:absolute;top:0px;left:100%;">
+              
               <div class="content-outside">
                 <h4>回饋品詳細內容</h4>
                 <div class="count">
@@ -296,21 +298,24 @@
                   <input type="text" class="input-text" name="question_title" value="我是預設值">
                 </div>
                 
-              </div>
-               
+              </div>  
               <div class="btn-cart">
-                <span class="price">
+                <span class="transform-btn hidden-lg hidden-md"><i class='fa fa-angle-left'></i></span>
+                <span class="price ">
                   總計 NT$ <span class="money" style="font-weight:600;font-size:24px;">1,000</span>
-                </span> 
-                <span class="goto"><img src="assets/img/main/icon2.svg" alt="">加入購物車</span>
+                </span>
+                
+                <span class="goto" data-dismiss='modal'><img src="assets/img/main/icon2.svg" alt="">加入購物車</span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+ 
   </section>
+
+  <div class="sidebar-dark-cover"></div>
   <div class="sidebar">
     <div class="list">
       <div class="title">
@@ -341,7 +346,14 @@
               </table>
             </div>
           </div>
-          <div class="item-money">NT$ 480</div>
+          <div class="item-bottom">
+            <div class="item-discard">
+              <img src="assets/img/main/garbage.svg" alt="">
+            </div>
+            <div class="item-money">
+              NT$ 480
+            </div>
+          </div>
         </div>
       </div>
       <hr>
@@ -361,22 +373,29 @@
               </table>
             </div>
           </div>
-          <div class="item-money">NT$ 480</div>
+          <div class="item-bottom">
+            <div class="item-discard">
+              <img src="assets/img/main/garbage.svg" alt="">
+            </div>
+            <div class="item-money">
+              NT$ 480
+            </div>
+          </div>
         </div>
       </div>
       <hr>
-
     </div>
   </div>
+
   <footer>
     <div class="container-fluid">
       <div class="out" >
         <ul class="nav navbar-nav navbar-right">
-          <li>
+          <li class="hidden-xs hidden-sm">
             <span class="extra">額外贊助</span><input type="number" name="quantity" min="1" max="5" value="0">
           </li>
-          <li>
-            <span class="total-word">總計</span><span class="money">123132</span>
+          <li class="footer-money">
+            <span class="total-word">總計NT$</span><span class="money">123,132</span>
           </li>
           <li class="cart">
             <img src="assets/img/main/icon2-2.svg" alt="">
