@@ -4,7 +4,9 @@ $(document).ready(function() {
   var w = window.innerWidth;
   var h = window.innerHeight;
   //console.log("test2");
-
+  //default test
+  var test_num = 0;
+  $(".num").html(test_num);
 
   $('.dark-cover').hover(function(){
     if(w>992){
@@ -148,18 +150,25 @@ $(document).ready(function() {
     }
   })
 
-  $(".goto").click(function(){
-    
-    //$(".num").addClass("num-animation"); 
+  $(".modal-content-md2 .goto").click(function(){
     
       setTimeout(function(){
+        test_num = test_num +1;
+        $(".num").html(test_num);
         $(".num").addClass("num-animation"); 
         setTimeout(function(){
           $(".num").removeClass("num-animation");
-        },400)  
+        },1500)  
       },200);
-    
-    
+  })
+
+  $(".item-bottom #test1").click(function(){
+    var item_content = $(this).parent();
+    var item = item_content.parent().parent();
+    item.remove();
+    console.log(item);
+    item.next().remove();
+
   })
 
 });
