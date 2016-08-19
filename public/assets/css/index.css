@@ -24,6 +24,15 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 
+input, select {
+  outline: none;
+}
+
+input:focus, select:focus {
+  -webkit-box-shadow: 0px 0px 4px #44acf2;
+  box-shadow: 0px 0px 4px #44acf2;
+}
+
 nav {
   width: 100%;
   height: 50px;
@@ -638,7 +647,6 @@ footer li.cart {
   cursor: pointer;
   /* Chrome, Safari, Opera */
   /* Generated with Bounce.js. Edit at http://goo.gl/lVLIUI */
-  /* Standard syntax */
 }
 
 footer li.cart img {
@@ -670,11 +678,6 @@ footer li.cart .num-animation {
   right: 4px;
   -webkit-animation: animation 1500ms linear infinite both;
   animation: animation 1500ms linear infinite both;
-}
-
-footer li.cart .animation-target {
-  -webkit-animation: animation 1000ms linear both;
-  animation: animation 1000ms linear both;
 }
 
 @-webkit-keyframes animation {
@@ -867,102 +870,6 @@ footer li.cart .animation-target {
   }
 }
 
-@-webkit-keyframes example {
-  0% {
-    width: 16px;
-    height: 16px;
-    top: 4px;
-    right: 4px;
-    font-size: 12px;
-    line-height: 16px;
-    opacity: 0;
-    transform: rotate(30deg);
-  }
-  25% {
-    width: 50px;
-    height: 50px;
-    top: -13px;
-    right: -13px;
-    font-size: 36px;
-    line-height: 50px;
-    opacity: 0.5;
-    transform: rotate(-40deg);
-  }
-  50% {
-    width: 16px;
-    height: 16px;
-    top: 4px;
-    right: 4px;
-    font-size: 12px;
-    line-height: 16px;
-    opacity: 1;
-    transform: rotate(40deg);
-  }
-  60% {
-    transform: rotate(-30deg);
-  }
-  70% {
-    transform: rotate(30deg);
-  }
-  80% {
-    transform: rotate(-30deg);
-  }
-  90% {
-    transform: rotate(10deg);
-  }
-  100% {
-    transform: rotate(-10deg);
-  }
-}
-
-@keyframes example {
-  0% {
-    width: 16px;
-    height: 16px;
-    top: 4px;
-    right: 4px;
-    font-size: 12px;
-    line-height: 16px;
-    opacity: 0;
-    transform: rotate(30deg);
-  }
-  25% {
-    width: 50px;
-    height: 50px;
-    top: -13px;
-    right: -13px;
-    font-size: 36px;
-    line-height: 50px;
-    opacity: 0.5;
-    transform: rotate(-40deg);
-  }
-  50% {
-    width: 16px;
-    height: 16px;
-    top: 4px;
-    right: 4px;
-    font-size: 12px;
-    line-height: 16px;
-    opacity: 1;
-    transform: rotate(40deg);
-  }
-  60% {
-    transform: rotate(-30deg);
-  }
-  70% {
-    transform: rotate(30deg);
-  }
-  80% {
-    transform: rotate(-30deg);
-  }
-  90% {
-    transform: rotate(10deg);
-  }
-  100% {
-    transform: rotate(-10deg);
-  }
-}
-
 footer .checkout {
   background: #44acf2;
   color: #FFF;
@@ -1036,12 +943,15 @@ footer .checkout i {
 }
 
 .sidebar .list hr {
-  margin: 10px auto;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 .sidebar .list .list-item {
   display: flex;
   min-height: 80px;
+  padding: 10px 0px;
+  border-bottom: 1px solid #eee;
 }
 
 .sidebar .list .list-item .item-photo {
@@ -1237,7 +1147,7 @@ footer .checkout i {
     color: #FFF;
     font-size: 18px;
     text-align: center;
-    border-right: 1px rgba(255, 255, 255, 0.4) solid;
+    border-right: 1px rgba(255, 255, 255, 0.2) solid;
   }
   .modal-dialog .modal-img {
     width: 100%;

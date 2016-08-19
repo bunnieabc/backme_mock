@@ -167,8 +167,7 @@ $(document).ready(function() {
     var item = item_content.parent().parent();
     item.remove();
     console.log(item);
-    item.next().remove();
-
+    //item.next("hr").remove();
   })
 
 });
