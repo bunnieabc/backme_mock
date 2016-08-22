@@ -79,6 +79,10 @@ nav
   {
     margin-top:120px;
   }
+  .content-size{
+    width:90%; 
+    margin:auto;
+  }
   .item
   {
     background: #fff;
@@ -172,7 +176,8 @@ nav
   h2
   {
     line-height:40px;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
+    margin-left:16px; 
   }
 }
 
@@ -608,14 +613,14 @@ nav
 }
 
 footer{
-  height: 50px;
+  height: 60px;
   background:#fff;
   position:fixed;
   bottom: 0px;
   left: 0px;
   z-index:20;  
   width:100%;
-  box-shadow: 0 -3px 18px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 -3px 18px 0 rgba(0, 0, 0, 0.08),inset 5px 0 0px 0px $red;
   a{
     background: $blue;
     width:150px;
@@ -626,7 +631,7 @@ footer{
     background: $deep-blue;  
   }
   li{
-    line-height: 50px;
+    line-height: 60px;
     margin-left:100px;
     
     //width:180px;
@@ -654,7 +659,7 @@ footer{
       width:50px;
     }
     span.total-word{
-      line-height:50px;
+      line-height:60px;
     }
     .bootstrap-touchspin{
       display:block;
@@ -680,10 +685,11 @@ footer{
     padding-left:15px;
     padding-right:15px;
     cursor: pointer;
+    width:60px;
     //overflow:hidden;
     img
     {
-      width: 20px;
+      width: 25px;
       margin: auto;  
     }
     .num{
@@ -1088,6 +1094,12 @@ footer{
   .sec1{
     background-size:cover; 
     background-attachment:scroll;
+    
+
+    .content-size{
+      width:100%; 
+      margin:auto;
+    }
     .item{
       margin:4px;
       min-height:auto;
@@ -1141,6 +1153,7 @@ footer{
     right: -95%;
   }
   footer{
+    box-shadow: 0 -3px 18px 0 rgba(0, 0, 0, 0.08);
     .navbar-nav{
       margin:0px;
     }
@@ -1154,7 +1167,7 @@ footer{
       padding: 0px; 
     }
     li{
-      line-height: 50px;
+      line-height: 60px;
       margin-left:0px;
       .total-word{
         margin-left:10px;
@@ -1169,7 +1182,7 @@ footer{
       flex:2;
     }
     li.cart{
-      width:50px;
+      width:60px;
     }
     li.footer-money{
       flex:3;

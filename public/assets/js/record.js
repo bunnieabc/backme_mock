@@ -32,22 +32,11 @@ $(document).ready(function() {
   $("#p2").click(function(){
       $(".part2").html(test_data[2]);
   });
+
 });
 
 //reveal效果
-window.sr = ScrollReveal();
-sr.reveal('.sec1 .reveal',300);
-sr.reveal('.sec2 .reveal',400);
-sr.reveal('.sec3 .reveal',400);
-sr.reveal('.sec4 .reveal',400);
-sr.reveal('.sec5 .reveal',340);
 
-
-// 視差滾動
-$(window).load(function() {
-    var scene = document.getElementById('scene');
-    var parallax = new Parallax(scene);
-});
 
 
 
